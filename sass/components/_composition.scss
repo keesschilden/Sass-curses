@@ -3,10 +3,11 @@
 
   &__photo {
     position: absolute;
+    z-index: 10;
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.4);
     border-radius: 2px;
-    z-index: 10;
+
     transition: all 0.2s;
     outline-offset: 2rem;
 

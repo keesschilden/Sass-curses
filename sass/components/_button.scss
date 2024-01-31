@@ -1,13 +1,13 @@
 .btn {
   &:link,
   &:visited {
+    position: relative;
     display: inline-block;
+    padding: 1.5rem 4rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
     border-radius: 10rem;
     transition: all 0.2s;
-    position: relative;
     font-size: $default-font-size;
   }
 
@@ -36,14 +36,15 @@
 
   &::after {
     content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
+    display: inline-block;
     z-index: -1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+
     transition: all 0.4s;
   }
 
@@ -57,11 +58,12 @@
   &:link,
   &:visited {
     display: inline-block;
+    padding: 3px;
     font-size: $default-font-size;
     color: $color-primary;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
-    padding: 3px;
+
     transition: all 0.2s;
   }
 
