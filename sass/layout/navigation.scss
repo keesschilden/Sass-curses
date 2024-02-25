@@ -74,9 +74,13 @@
   &__list {
     width: 100%;
     @include center;
-
+    visibility: hidden;
     list-style: none;
     text-align: center;
+  }
+
+  &__checkbox:checked ~ &__nav &__list {
+    visibility: visible;
   }
 
   &__item {
@@ -126,6 +130,7 @@
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
+
     width: 100%;
   }
 

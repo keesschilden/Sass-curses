@@ -48,7 +48,7 @@
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: 0;
-    transform: translateY(-4rem);
+    transform: translateY(-5rem);
   }
 
   &__radio-group {
@@ -75,7 +75,7 @@
   &__radio-button {
     position: absolute;
     left: 0;
-    top: -0.4rem;
+    top: -0.5rem;
 
     display: inline-block;
     height: 3rem;
@@ -87,12 +87,13 @@
       content: "";
       display: block;
       @include center;
-      height: 1.3rem;
-      width: 1.3rem;
+      height: 1.4rem;
+      width: 1.4rem;
       border-radius: 50%;
 
       background-color: $color-primary;
       opacity: 0;
+
       transition: all 0.2s;
     }
   }
